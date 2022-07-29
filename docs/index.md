@@ -1,77 +1,80 @@
-<a href="https://discord.gg/C29hYvh" target="_blank"><img style="float: right;" src="img/discord.png"></a>
 
-# NH Switch Guide
+# NH Switch 破解教程
 
-A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock to Atmosphere.
-
-&nbsp;
-
-!!! tip "Discord Help"
-    For live support with this guide please visit us in **#switch-assistance** over at the [Nintendo Homebrew Discord](https://discord.gg/C29hYvh).
-
-### What is homebrew?
-
-!!! tip ""
-    Homebrew is a term for unoffical software written by hobbyists and amateur developers for locked down systems (i.e. the Switch).
-
-    This can include save editing tools, games, emulators, and more.
-
-    Homebrew can be run for free on your Switch through Custom Firmware as long as you have a "first-generation" system running 14.1.2 or lower, and a USB-C cable.
-
-### What is Custom Firmware?
-
-!!! tip ""
-    Custom Firmware (“CFW”) is a piece of software that modifies the system firmware.
-    Atmosphere, for example, does this by running in the background and patching the OS on the fly.
-
-    This allows one to extend the functionality of their system by giving homebrew higher levels of permission than most userland exploits and can be used to provide extra features for homebrew devs and users to take advantage of for various purposes, for instance, game modding using LayeredFS.
-
-    CFW can be set up on any first-generation console on any version (but will require additional tools).
-
-### What does this guide install?
-
-!!! tip ""
-    This guide has the end goal of taking a completely unmodified Switch from Stock Firmware to Atmosphere Custom Firmware.
-
-    fusee-gelee is currently the best method of launching Custom Firmware that gives us nearly full control of the system. It utilizes a vulnerability in the bootROM of the first-generation Switch systems, allowing us to send any payload we want to the Switch's recovery mode, instead of only ones that Nintendo have authorized.
-
-### What can I do with Custom Firmware?
-
-!!! tip ""
-    * Customize your HOME Menu with user-created themes and splash screens
-    * Use “ROM hacks” for games that you own
-    * Backup, edit, and restore saves for many games
-    * Play games for older systems with various emulators, using RetroArch or other standalone emulators
-    * Safely update to the latest system version without fear of losing access to homebrew
-
-### What do I need to know before starting?
-
-!!! tip ""
-    Before beginning the guide, you must know the risks of Switch hacking: EVERY time you modify your system, there is always the potential for an UNRECOVERABLE brick. They’re rare but still a possibility so make sure you follow ALL directions EXACTLY.
-
-    This guide will work on first-generation Switch consoles in all regions on firmware 14.1.2 or below.
-
-    You will need **one** of the following in order to successfully follow this guide:
-
-    - A PC and a USB cable capable of data transfer between your Switch and your PC
-    - An Android device and a USB cable capable of data transfer between your Switch and your Android device
-		- This does not work on every android phone
-    - A Lightning-OTG adapter, a jailbroken iOS device and a USB cable capable of data transfer between your Switch and the adapter
-        - This method is not covered by the guide, but you can read more about it at [this website](https://mologie.github.io/nxboot/)
-
-
-    You will also need a micro SD card that is at least 64 gigabytes or larger if you plan on following this guide through the emummc path, which is safer and strongly recommended. If you must use a smaller SD card, it is possible with the sysmmc path, but strongly not recommended.
-
-    Finally, you will need a way to access Recovery Mode. (This will be further explained in the "Entering RCM section")
-
-If everything goes according to plan, you will lose no data and end up with everything that you started with (games, Nintendo Account, saves, etc will be preserved).
-
-Keep your device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off.
-
-Custom Firmware is not permanent with current methods, and will be unloaded upon rebooting the system.
-
-It is advised that you read the entire guide from start to finish one or more times before actually running through the guide with your system.
+一份由 NH Server 团队编写的，Counta翻译的教程，引导你从原版机软破破解成大气层。
 
 &nbsp;
 
-#### [Continue to Getting Started <i class="fa fa-arrow-circle-right fa-lg"></i>](user_guide/getting_started.md) 
+!!! tip "破解的教程为软破机独有"
+    从零破解教程只针对软破机，但是硬破的机器也适用“后续操作”中的内容。
+
+!!! tip "Discord 协助（英语）"
+    在线协助请找 [Nintendo Homebrew Discord 服务器](https://discord.gg/C29hYvh) 的 **#switch-assistance** 频道。
+
+### 什么是自制软件？
+
+!!! tip ""
+    自制软件是一些爱好者或是业余开发者编写出来的 非官方的软件、
+
+    其包括模拟器 修改器 金手指，等等。
+
+    自制软件可以在你的已破Switch（包括硬破和软破机）上面运行，这需要你有一根 Type-C 的数据线。
+
+### 什么是自制固件(CFW)？
+
+!!! tip ""
+    自制固件 (“CFW”) 是修改系统固件的软件。
+    例如大气层通过后台持续运行来修改。
+
+    这使人们可以通过比大多数漏洞给自制软件的许可级别来扩展系统的功能，并可用于为自制开发人员和用户提供额外的功能，以利用各种目的，例如，使用 LayeredFS 给游戏打补丁。
+
+    任何被破解机子都可以运行自制固件。
+
+### 本教程会教什么
+
+!!! tip ""
+    本教程会把你的“可软破”Switch破解成大气层自制固件。
+
+    fusee-gelee 是最好的启动自制固件的方法，并且能让我们拥有对系统完全掌握的权限。 它利用可软破 Switch 在BootROM的脆弱性，允许我们注入一些Payload，不管任天堂官方有没有认证。
+
+### 用自制固件破解了能做什么？
+
+!!! tip ""
+    * 自定义你的系统界面和启动画面
+    * 玩盗版游戏
+    * 备份 编辑和恢复很多游戏的存档
+    * 用像 RetroArch 一样的模拟器游玩许多旧设备上的游戏
+    * 安全更新系统 不怕掉破解
+
+### 开始前我要注意什么
+
+!!! tip ""
+    在进行教程之前，你要知道破解的风险：每次魔改你的系统，都有可能不可逆转的变砖。几率很小，但是并非不可能，所以确保每一步都要认真来做
+
+    译者注：没有人会为你的破解失败负责。
+
+    本教程将教你如何对可软破的 Switch 进行 “软破”。 
+
+    为了保证成功 你需要下列物品 **之一** 。
+
+    - 一台电脑，一根能在电脑和Switch间传输数据的数据线。
+    - 一台 Android 手机，一根能在手机和Switch间传输数据的线。
+		- 并非所有的手机都有效，也并非所有的线都能用、
+    - 一个 Lightning-OTG 转换器，一台破解的 iOS 设备，以及一根能传输数据的线。
+        - 本教程不教这个方法，想学习的请移步 [到此](https://mologie.github.io/nxboot/)
+
+
+    如果想要搞虚拟系统，还需要一张 64G 以上的 microSD 卡。虚拟系统更加安全，也更受欢迎。如果你没有或者根本不想用大的SD卡，可以不做虚拟系统，但不推荐。
+
+    最后，你得找到进入恢复模式(RCM)的方法。 (在后续的 "进入RCM" 部分会更为详细的介绍)
+
+如果一切正常，你不会丢失任何数据，还能留住它们(例如游戏 存档 任天堂账户)。
+
+在整个过程中保持设备充电，以避免出现意外关机造成的数据丢失或损坏。
+
+在现有情况下，软破机重启后会丢失自制固件。
+
+开始之前应该通读多次破解教程
+&nbsp;
+
+#### [继续到开始操作 <i class="fa fa-arrow-circle-right fa-lg"></i>](user_guide/getting_started.md) 
