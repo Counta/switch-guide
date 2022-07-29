@@ -1,43 +1,42 @@
-site_name: NH Switch Guide
+site_name: NH Switch 破解教程
 theme: slate
 copyright: Copyright &copy; 2022 <a href="https://discord.gg/C29hYvh" target="_blank">Nintendo Homebrew</a>, Maintained by the <a href="/switch-guide/about">NH Discord Server</a>.
-site_description: Switch CFW Guide.
-site_author: NH Discord Server.
+site_description: Switch 破解教程
+site_author: NH Discord Server & Counta
 site_url: https://counta.github.io/switch-guide/
 
 nav:
-    - Home: index.md
-    - User Guide:
-        - 'Getting Started': 'user_guide/getting_started.md'
+    - 主页: index.md
+    - 从零开始:
+        - '开始': 'user_guide/getting_started.md'
         - 'RCM': 'user_guide/rcm.md'  
-        - 'Entering RCM': 'user_guide/emummc/entering_rcm.md'
-        - 'Sending a payload': 'user_guide/emummc/sending_payload.md'      
-        - 'Partitioning the SD': 'user_guide/emummc/partitioning_sd.md'    
-        - 'SD preparations': 'user_guide/emummc/sd_preparation.md'
-        - 'Making the emuMMC': 'user_guide/emummc/making_emummc.md'
-        - 'Launching CFW': 'user_guide/emummc/launching_cfw.md'
-    - Extras:
-        - 'Blocking Nintendo servers': 'extras/blocking_nintendo.md'
-        - 'Restoring a NAND Backup': 'extras/nandrestore.md'
+        - '进入 RCM': 'user_guide/emummc/entering_rcm.md'
+        - '发送 Payload': 'user_guide/emummc/sending_payload.md'      
+        - 'SD 卡分区': 'user_guide/emummc/partitioning_sd.md'    
+        - 'SD 卡准备': 'user_guide/emummc/sd_preparation.md'
+        - '制作虚拟系统(emuMMC)': 'user_guide/emummc/making_emummc.md'
+        - '启动自制固件(CFW)': 'user_guide/emummc/launching_cfw.md'
+    - 后续操作:
+        - '屏蔽任天堂服务器': 'extras/blocking_nintendo.md'
+        - '恢复NAND备份': 'extras/nandrestore.md'
         - 'AutoRCM': 'extras/autorcm.md'
-        - 'Dumping Title Keys': 'extras/dumping_title_keys.md'
-        - 'Theming': 'extras/theming.md'
-        - 'Save Management': 'extras/save_management.md'
-        - 'Game Modding': 'extras/game_modding.md'
-        - 'Game Cheats': 'extras/cheats.md'
-        - 'Linux injection without root': 'extras/adding_udev.md'
-        - 'Showing File Name Extensions (Windows)': 'extras/showing_file_extensions.md'
+        - '提取 Title Keys': 'extras/dumping_title_keys.md'
+        - '外观魔改': 'extras/theming.md'
+        - '存档管理': 'extras/save_management.md'
+        - '游戏补丁': 'extras/game_modding.md'
+        - '金手指': 'extras/cheats.md'
+        - 'Linux设备无root权限破解方法': 'extras/adding_udev.md'
+        - '显示文件扩展名 (Windows)': 'extras/showing_file_extensions.md'
         - 'Alternate Boot Setups': 'extras/alternate_bootsetups.md'
-        - 'RCM Payload Injectors Information': 'extras/rcm_injectors.md'
-        - 'Updating CFW': 'extras/updating.md'
-        - 'Changing SD cards': 'extras/transfer_sd.md'
-        - 'Glossary': 'extras/glossary.md'
+        - 'RCM Payload 注入器信息': 'extras/rcm_injectors.md'
+        - '升级自制固件(CFW)': 'extras/updating.md'
+        - '更换SD卡': 'extras/transfer_sd.md'
+        - '特殊词汇表': 'extras/glossary.md'
     - FAQ: faq.md
-    - About: about.md
+    - 关于: about.md
     
 markdown_extensions:
     - admonition
-    - fontawesome_markdown
 
 extra_css:
     - css/custom.css
