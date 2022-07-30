@@ -10,7 +10,7 @@
 
     感谢做出帮助的 [每一个人](https://github.com/nh-server/switch-guide/graphs/contributors)，特别感谢 **noirscape** 。
 
-    同时特别感谢 [小五](https://github.com/LittleFIve233) 和他的 [Wii U破解教程](https://littlefive233.github.io)
+    同时特别感谢 [小五](https://github.com/LittleFIve233) 和他的 [Wii U破解教程](https://littlefive233.github.io)。特别感谢 [SaitamaHuang](https://github.com/SaitamaHung) 的大力支持。同样感谢[Fastgit](https://github.com/FastGitORG) 提供的快速的 Github 反代镜像，优化了国内用户的下载体验。
 
 !!! tip ""
     [可在GitHub上找到英文原版源码](https://github.com/nh-server/switch-guide) ，其有 [ISC license](https://github.com/nh-server/switch-guide/blob/master/LICENSE.md) 证书。
