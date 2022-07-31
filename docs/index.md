@@ -60,7 +60,7 @@
     - 一台电脑，一根能在电脑和Switch间传输数据的数据线。
     - 一台 Android 手机，一根能在手机和Switch间传输数据的线。
 		- 并非所有的手机都有效，也并非所有的线都能用、
-    - 一个 Lightning-OTG 转换器，一台破解的 iOS 设备，以及一根能传输数据的线。
+    - 一个 Lightning-OTG 转换器，一台越狱的 iOS 设备，以及一根能传输数据的线。
         - 本教程不教这个方法，想学习的请移步 [到此](https://mologie.github.io/nxboot/)
 
 
