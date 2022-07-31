@@ -181,7 +181,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#getting-started" class="nav-link">Getting Started</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">开始操作</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -190,135 +190,127 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="getting-started">Getting Started</h1>
-<h3 id="finding-your-serial-number">Finding your serial number</h3>
-<p>The first thing to do is determine if your Switch is vulnerable to fusee-gelee, the exploit we will be using to launch CFW.</p>
-<p>This vulnerability was independently discovered by several different Switch hacking teams, and multiple variants of it were released to the public in April 2018 after a 90-day disclosure period ended. Nintendo and NVIDIA were made aware of the issue before the public release as a result, and Switch systems that are not vulnerable to the exploit started being spotted in the wild in July 2018. NVIDIA <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/4660/~/security-notice%3A-nvidia-tegra-rcm-vulnerability">publicly acknowledged the flaw</a> in April as well. In July 2019, Nintendo announced updated consoles, a handheld variant of the Switch called the Switch Lite (HDH-001), and a new model of original Switch (HAC-001-01) with better battery life. Both of these new models use a new processor called the T210b01 (also known as T214 and Mariko) with a new bootROM, and are not hackable at the current time.</p>
-<p>Patched and Mariko units can be identified by their serial number. This number can be found on the bottom of your Switch adjacent to the USB-C port, or in the Settings applet at <strong>System -&gt; Serial Information</strong>. </p>
+<h1 id="_1">开始操作</h1>
+<h3 id="_2">看看序列号</h3>
+<p>第一件事情就是知道 Switch 能不能用 fusee-gelee，此漏洞用于启动 CFW.</p>
+<p>该漏洞是由几个不同的 Switch 黑客团队独立发现的，并且在 90 天的披露期结束后，2018 年 4 月向公众发布了多种变体。 因此，任天堂和英伟达在公众发布之前就意识到了这个问题，2018 年 7 月就有人发现 Switch 不再可以瞎搞。 英伟达也同时在四月 <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/4660/~/security-notice%3A-nvidia-tegra-rcm-vulnerability">公开承认缺陷</a>  2019 年 7 月 任天堂发布了一个名为 Switch Lite (HDH-001) 的新机，还有续航升级的原版 Switch (HAC-001-01) 。二者都用了新的名为 T210b01 (也叫 T214 和 Mariko) 的新处理器。那些 Switch 当时不能破解。</p>
+<p>补丁机和 Mariko 机可以用序列号识别。序列号可以从 Switch 充电口旁边或者设置的 <strong> 主机 -&gt; 序列号信息 </strong> 找到。</p>
 <p>&nbsp;</p>
 <div class="admonition tip">
-<p><img alt="Visual for System Settings serial location" src="../img/getting_started_serial_location.jpg" /></p>
+<p><img alt="序列号在设置的位置" src="../img/getting_started_serial_location.jpg" /></p>
 </div>
 <div class="admonition tip">
-<p><img alt="Visual for serial location on the bottom of console" src="../img/serial_switch.png" />    </p>
+<p><img alt="序列号在机身的位置" src="../img/serial_switch.png" /></p>
 </div>
 <p>&nbsp;</p>
-<h3 id="determining-if-your-switch-is-vulnerable">Determining if your Switch is vulnerable</h3>
-<p>The homebrew community has crowdsourced a list of known serial numbers which are vulnerable to fusee-gelee. </p>
+<h3 id="_3">确定到底能不能破解</h3>
+<p>自制软件社区有一张判断能不能利用 fusee-gelee 漏洞的表。</p>
 <ul>
-<li>If your serial number is on this list as "potentially patched", follow the guide and see if your system works. </li>
-<li>If your serial number is listed as "patched", there is nothing you can do at this time. </li>
-<li>If your system is patched, it is highly advised to keep it on 7.0.1 or lower, if possible, as there may be a vulnerability for these versions in the far future. <strong>DO NOT update patched consoles past 7.0.1 if you want to ever have a chance of running homebrew and/or CFW on them.</strong></li>
+<li>如果下面的表确定了你的 Switch 可破，那你可以继续跟着教程走</li>
+<li>如果确定你的 Switch 已经打了补丁，那你就去硬破，这里不写硬破教程，破完了可以继续来看看怎么瞎玩。</li>
+<li>如果系统打了补丁，建议把系统版本能留就留在 7.0.1 。这个版本有很多漏洞 <strong> 如果想要搞破解就千万不要更新！</strong>，不过谁到现在还没更新呢。</li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Notice</p>
-<p>If you are unsure if your serial is patched, you can test your console yourself following the instructions <a href="../emummc/sending_payload/">here.</a></p>
+<p class="admonition-title">注意</p>
+<p>如果下面的表也不确定能不能破解，没买 Switch 的也别尝试拼一枪，买了的读一读 <a href="../emummc/sending_payload/">这篇</a> ，万一能破呢。</p>
 </div>
 <hr />
 <p>&nbsp;</p>
-<h3 id="serial-list">Serial list</h3>
-<p>The following information is based on <a href="https://gbatemp.net/threads/switch-informations-by-serial-number-read-the-first-post-before-asking-questions.481215/">this GBATemp thread</a>.</p>
+<h3 id="_4">列表</h3>
+<p>该表根据 <a href="https://gbatemp.net/threads/switch-informations-by-serial-number-read-the-first-post-before-asking-questions.481215/">这个 GBAtemp 帖子制作</a>.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Serial Numbers</th>
-<th align="left"><span style="color:green">Unpatched</span></th>
-<th align="left"><span style="color:orange">Potentially patched</span></th>
-<th align="left"><span style="color:red">Patched</span></th>
+<th align="left">序列号</th>
+<th align="left"><span style="color:green">未打补丁 </span></th>
+<th align="left"><span style="color:orange"> 可能打补丁 </span></th>
+<th align="left"><span style="color:red"> 已打补丁</span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left">XAW1</td>
-<td align="left">XAW10000000000 to XAW10074000000</td>
-<td align="left">XAW10074000000 to XAW10120000000</td>
-<td align="left">XAW10120000000 and up</td>
+<td align="left">XAW10000000000 到 XAW10074000000</td>
+<td align="left">XAW10074000000 到 XAW10120000000</td>
+<td align="left">XAW10120000000 以上</td>
 </tr>
 <tr>
 <td align="left">XAW4</td>
-<td align="left">XAW40000000000 to XAW40011000000</td>
-<td align="left">XAW40011000000 to XAW40012000000</td>
-<td align="left">XAW40012000000 and up</td>
+<td align="left">XAW40000000000 到 XAW40011000000</td>
+<td align="left">XAW40011000000 到 XAW40012000000</td>
+<td align="left">XAW40012000000 以上</td>
 </tr>
 <tr>
 <td align="left">XAW7</td>
-<td align="left">XAW70000000000 to XAW70017800000</td>
-<td align="left">XAW70017800000 to XAW70030000000</td>
-<td align="left">XAW70030000000 and up</td>
+<td align="left">XAW70000000000 到 XAW70017800000</td>
+<td align="left">XAW70017800000 到 XAW70030000000</td>
+<td align="left">XAW70030000000 以上</td>
 </tr>
 <tr>
 <td align="left">XAJ1</td>
-<td align="left">XAJ10000000000 to XAJ10020000000</td>
-<td align="left">XAJ10020000000 to XAJ10030000000</td>
-<td align="left">XAJ10030000000 and up</td>
+<td align="left">XAJ10000000000 到 XAJ10020000000</td>
+<td align="left">XAJ10020000000 到 XAJ10030000000</td>
+<td align="left">XAJ10030000000 以上</td>
 </tr>
 <tr>
 <td align="left">XAJ4</td>
-<td align="left">XAJ40000000000 to XAJ40046000000</td>
-<td align="left">XAJ40046000000 to XAJ40060000000</td>
-<td align="left">XAJ40060000000 and up</td>
+<td align="left">XAJ40000000000 到 XAJ40046000000</td>
+<td align="left">XAJ40046000000 到 XAJ40060000000</td>
+<td align="left">XAJ40060000000 以上</td>
 </tr>
 <tr>
 <td align="left">XAJ7</td>
-<td align="left">XAJ70000000000 to XAJ70040000000</td>
-<td align="left">XAJ70040000000 to XAJ70050000000</td>
-<td align="left">XAJ70050000000 and up</td>
+<td align="left">XAJ70000000000 到 XAJ70040000000</td>
+<td align="left">XAJ70040000000 到 XAJ70050000000</td>
+<td align="left">XAJ70050000000 以上</td>
 </tr>
 <tr>
 <td align="left">XAK1</td>
 <td align="left"><strong>N/A</strong></td>
-<td align="left">XAK10000000000 and up</td>
+<td align="left">XAK10000000000 以上</td>
 <td align="left"><strong>N/A</strong></td>
 </tr>
 </tbody>
 </table>
-<p>If your serial number is not listed above, your device is not vulnerable.</p>
+<p>如果上表没有列出，那也是不可软破的。</p>
 <p>&nbsp;</p>
-<h3 id="console-preparation">Console Preparation</h3>
+<h3 id="_5">主机准备</h3>
 <div class="admonition danger">
-<p class="admonition-title">Important</p>
-<p>Before setting up the console for homebrew, it is important to have at least one eShop game (such as <a href="https://www.nintendo.com/games/detail/fallout-shelter-switch/">Fallout Shelter</a>), application (such as <a href="https://www.nintendo.com/games/detail/youtube-switch/">YouTube</a> or <a href="https://www.nintendo.com/games/detail/hulu-switch/">Hulu</a>), or a game demo such as <a href="https://www.nintendo.com/games/detail/10-second-run-returns-switch">10 Second Run RETURNS</a>. Running homebrew through any game cartridge will also work, but it must be inserted. Running homebrew does not permanently replace or remove the game/application, nor does it become tied to only one game/application (any cartridge you have inserted or any game/application installed can always be used). Once you have any game or application, you are prepared to continue on with the guide.</p>
+<p class="admonition-title">重要（译者：其实很没用）</p>
+<p>一切开始之前最好有任意游戏 (比如 <a href="https://www.nintendo.com/games/detail/fallout-shelter-switch/">辐射: 避难所</a>), 软件 (比如 <a href="https://www.nintendo.com/games/detail/youtube-switch/">YouTube</a> 或者 <a href="https://www.nintendo.com/games/detail/hulu-switch/">Hulu</a>), 再或者试玩版游戏 <a href="https://www.nintendo.com/games/detail/10-second-run-returns-switch">10 Second Run RETURNS</a>. 卡带版游戏也行，但是要插着。破解不会删掉这些东西也不会覆盖这些东西 (安装的软件和插入的游戏卡也能正常使用). 你有游戏 / 软件的话就继续吧。
+<strong> 译者注：这一步根本可以不做。</strong></p>
 </div>
 <p>&nbsp;</p>
 <hr />
-<h3 id="version-table">Version Table</h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Nereba and Caffeine how-to guides are currently a Work-In-Progress (WIP)!</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>While the "New" Switch (HAC-001-01)'s earliest possible firmware is 7.0.1, it is <strong>not</strong> vulnerable to <em>déjà vu</em>, the exploit used by Nereba and Caffeine, because of hardware differences from the "Old" Switch (HAC-001).</p>
-</div>
 <p>&nbsp;</p>
 <table>
 <thead>
 <tr>
-<th align="left">Firmware Version</th>
-<th align="left">Unpatched Switches (HAC-001)</th>
-<th align="left">Patched Switches (HAC-001)</th>
-<th align="left">"New" Switch (HAC-001-01)</th>
+<th align="left">系统版本</th>
+<th align="left">未打补丁的机子 (HAC-001)</th>
+<th align="left">打了补丁的机子 (HAC-001)</th>
+<th align="left">"续航版" Switch (HAC-001-01)</th>
 <th align="left">Switch Lite (HDH-001)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left">1.0.0</td>
-<td align="left">Nereba or <a href="../rcm/"><strong>RCM</strong></a></td>
+<td align="left">Nereba 或者 <a href="../rcm/"><strong>RCM</strong></a></td>
 <td align="left"><strong>N/A</strong></td>
 <td align="left"><strong>N/A</strong></td>
 <td align="left"><strong>N/A</strong></td>
 </tr>
 <tr>
 <td align="left">2.0.0 - 3.0.2</td>
-<td align="left">Caffeine or <a href="../rcm/"><strong>RCM</strong></a></td>
+<td align="left">Caffeine 或者 <a href="../rcm/"><strong>RCM</strong></a></td>
 <td align="left"><strong>N/A</strong></td>
 <td align="left"><strong>N/A</strong></td>
 <td align="left"><strong>N/A</strong></td>
 </tr>
 <tr>
 <td align="left">4.0.0 - 4.1.0</td>
-<td align="left">Caffeine or <a href="../rcm/"><strong>RCM</strong></a></td>
+<td align="left">Caffeine 或者 <a href="../rcm/"><strong>RCM</strong></a></td>
 <td align="left">Caffeine</td>
 <td align="left"><strong>N/A</strong></td>
 <td align="left"><strong>N/A</strong></td>
@@ -326,40 +318,40 @@
 <tr>
 <td align="left">5.0.0 - 7.0.0</td>
 <td align="left"><a href="../rcm/"><strong>RCM</strong></a></td>
-<td align="left">Wait for CFW</td>
+<td align="left">去硬破</td>
 <td align="left"><strong>N/A</strong></td>
 <td align="left"><strong>N/A</strong></td>
 </tr>
 <tr>
 <td align="left">7.0.1</td>
 <td align="left"><a href="../rcm/"><strong>RCM</strong></a></td>
-<td align="left">Wait for CFW</td>
-<td align="left">Cart update to 8.0.1</td>
+<td align="left">去硬破</td>
+<td align="left">插张能更新系统到 8.1.0 的卡</td>
 <td align="left"><strong>N/A</strong></td>
 </tr>
 <tr>
 <td align="left">8.0.1</td>
 <td align="left"><a href="../rcm/"><strong>RCM</strong></a></td>
-<td align="left">Wait for homebrew</td>
-<td align="left">Wait for homebrew</td>
-<td align="left">Wait for homebrew</td>
+<td align="left">去硬破</td>
+<td align="left">去硬破</td>
+<td align="left">去硬破</td>
 </tr>
 <tr>
 <td align="left">8.1.0 - 14.1.2</td>
 <td align="left"><a href="../rcm/"><strong>RCM</strong></a></td>
-<td align="left">Unhackable (currently)</td>
-<td align="left">Unhackable (currently)</td>
-<td align="left">Unhackable (currently)</td>
+<td align="left">去硬破</td>
+<td align="left">去硬破</td>
+<td align="left">去硬破</td>
 </tr>
 </tbody>
 </table>
 <p>&nbsp;</p>
 <div class="admonition note">
-<p class="admonition-title">About OLED</p>
-<p>OLED Switches (HEG-001) are currently unhackable via software.</p>
+<p class="admonition-title">OLED 机</p>
+<p>OLED 机 (HEG-001) 目前无法软破。</p>
 </div>
 <p>&nbsp;</p>
-<h4 id="if-your-switch-is-not-patched-continue-to-rcm"><a href="../rcm/">If your Switch is not patched, continue to RCM <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4></div>
+<h4 id="switch-rcm"><a href="../rcm/">如果 Switch 没打补丁，继续到 RCM <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4></div>
             </div>
         </div>
 
