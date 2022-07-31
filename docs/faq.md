@@ -10,6 +10,7 @@
     Even with this exploit fixed, many Switches on 8.0.1 and below will be hackable to some degree in the future (see [Should I update my Firmware?](#should-i-update-my-firmware) for much more detailed information).
     The serial number on the back of the box can possibly tell you which consoles are patched and which aren't.
     See <a href="https://gbatemp.net/threads/switch-informations-by-serial-number.481215/" target="_blank">here</a> for an up to date list.
+    
     **译者注：我不知道这些人写这部分想表达什么 建议只看可破和不可破的判断方法。**
 
 
